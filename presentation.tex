@@ -1,0 +1,34 @@
+\input{theme}
+
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{import}
+
+%Referencing
+\import{reference-styles/}{authoryear.tex}
+\newcommand\noibidcite[1]{\citetrackerfalse\cite{#1}\citetrackertrue} %Force citation to not be ibid.
+\addbibresource{references.bib}
+
+\title{A Summary of \noibidcite{hales2017contrasting}}
+\subtitle{\citetitle*{hales2017contrasting}}
+\author[
+	Borthwick-Taylor \and Brown \and Olsthoorn
+]{
+	Greer Borthwick-Taylor \and Christopher Brown \and Mats Olsthoorn
+}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+\note{
+	
+}
+
+\begin{frame}{References}
+	\printbibliography
+\end{frame}
+
+\end{document}

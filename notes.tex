@@ -1,0 +1,15 @@
+\documentclass[pdf]{beamer}
+
+%Work around to make references work with only notes.
+%https://tex.stackexchange.com/a/457436
+\makeatletter
+\defbeameroption{show only notes}[]%
+{
+	\beamer@notestrue
+	\beamer@notesnormalsfalse
+}
+\makeatother
+
+\setbeameroption{show only notes}
+
+\input{presentation}

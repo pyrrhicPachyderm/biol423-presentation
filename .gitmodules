@@ -1,0 +1,3 @@
+[submodule "reference-styles"]
+	path = reference-styles
+	url = git@github.com:pyrrhicPachyderm/reference-styles.git
