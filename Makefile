@@ -4,10 +4,11 @@ RM := rm -f
 
 slidedoc := slides
 notedoc := notes
+handoutdoc := handout
 content_tex_files := presentation.tex
 supporting_tex_files := references.bib reference-styles/authoryear.tex theme.tex
 
-all: $(slidedoc).pdf $(notedoc).pdf
+all: $(slidedoc).pdf $(notedoc).pdf $(handoutdoc).pdf
 .PHONY: all
 
 %.pdf: %.tex $(content_tex_files) $(supporting_tex_files)
